@@ -1,4 +1,5 @@
-# Telco Churn Prediction Library - Final Project (Computing for Data Science)- By Tarang Kadyan, Enzo Infantes, Deepak Malik
+# Telco Churn Prediction Library - Final Project (Computing for Data Science)
+- By Tarang Kadyan, Enzo Infantes, Deepak Malik
 
 A Python library for predicting customer churn in telecommunication industry using machine learning. This project is part of the final project for the Computing for Data Science class at Barcelona School of Economics.
 
