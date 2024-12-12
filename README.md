@@ -51,57 +51,32 @@ The dataset is taken from Kaggle.
 
 ## Project Structure
 
-📦 telco-churn-library
-
-┣ 📜 LICENSE                                             # Licensing information
-
-┣ 📜 README.md                                           # Project documentation
-
-┣ 📜 setup.py                                            # Installation script for pip install
-
-┣ 📜 requirements.txt                                    # Dependencies list
-
-┣ 📂 api                                                 # API-related functionalities
-
-    ┃ ┣ 📜 __init__.py                                       # Package initializer
-
-    ┃ ┗ 📜 api.py                                            # API routes and configuration
-
-    ┗ 📜 trained_model_pk.ipynb                            #trained model to generate pickle file
-  
-    ┗ 📜 json_file.json                                    #json input file
-  
-    ┗ 📜 post_request.py                                   #request file for endpoint
-
-┣ 📂 Data                                                # Contains the dataset(s)
-
-     ┃ ┗ 📜 data.csv                                          # Example dataset for Telco Churn
-
-┣ 📂 src_telco_churn                                     # Main source code folder
-
-    ┃ ┣ 📜 __init__.py                                       # Package initializer for src_telco_churn
-
-    ┃ ┣ 📜 data_loader.py                                    # Handles data ingestion
-
-    ┃ ┣ 📜 feature_engineering.py                            # Feature engineering scripts
-
-    ┃ ┣ 📜 modeling.py                                       # Model training and evaluation
-
-    ┃ ┣ 📜 preprocessor.py                                   # Data preprocessing functionalities
-
-    ┃ ┗ 📜 utils.py                                          # Shared utility functions
-
-┣ 📂 Tests                                               # Unit tests for the project
-
-    ┃ ┣ 📜 test_data_loader.py                               # Test cases for data_loader.py
-
-    ┃ ┣ 📜 test_feature_engineering.py                       # Test cases for feature_engineering.py
-
-    ┃ ┣ 📜 test_modeling.py                                  # Test cases for modeling.py
-
-    ┃ ┗ 📜 test_preprocessor.py                              # Test cases for preprocessor.py
-
-┣ 📜 pipeline_execution.ipynb                            # Jupyter notebook for end-to-end pipeline execution
+📦 telco-churn-library/
+├── 📜 LICENSE                         # Licensing information
+├── 📜 README.md                       # Project documentation
+├── 📜 setup.py                        # Installation script for pip install
+├── 📜 requirements.txt                # Dependencies list
+├── 📂 api/                            # API-related functionalities
+│   ├── 📜 __init__.py                 # Package initializer
+│   ├── 📜 api.py                      # API routes and configuration
+│   ├── 📜 trained_model_pk.ipynb      # Trained model to generate pickle file
+│   ├── 📜 json_file.json              # JSON input file
+│   ├── 📜 post_request.py             # Request file for endpoint
+├── 📂 Data/                           # Contains the dataset(s)
+│   └── 📜 data.csv                    # Example dataset for Telco Churn
+├── 📂 src_telco_churn/                # Main source code folder
+│   ├── 📜 __init__.py                 # Package initializer for src_telco_churn
+│   ├── 📜 data_loader.py              # Handles data ingestion
+│   ├── 📜 feature_engineering.py      # Feature engineering scripts
+│   ├── 📜 modeling.py                 # Model training and evaluation
+│   ├── 📜 preprocessor.py             # Data preprocessing functionalities
+│   └── 📜 utils.py                    # Shared utility functions
+├── 📂 Tests/                          # Unit tests for the project
+│   ├── 📜 test_data_loader.py         # Test cases for data_loader.py
+│   ├── 📜 test_feature_engineering.py # Test cases for feature_engineering.py
+│   ├── 📜 test_modeling.py            # Test cases for modeling.py
+│   └── 📜 test_preprocessor.py        # Test cases for preprocessor.py
+└── 📜 pipeline_execution.ipynb        # Jupyter notebook for end-to-end pipeline execution
 
 
 ## Contributors
