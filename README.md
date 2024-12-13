@@ -56,7 +56,7 @@ path = kagglehub.dataset_download("blastchar/telco-customer-churn")
 
 print("Path to dataset files:", path)
 
-Project Structture
+Project Structure
 
 📦 telco-churn-library
 ┣ 📜 LICENSE                    # Licensing information
