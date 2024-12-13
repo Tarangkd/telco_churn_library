@@ -44,66 +44,61 @@ The dataset used in this project is the **Telco Customer Churn Dataset**, which 
 | `TotalCharges`        | Total amount charged to the customer.                                 |
 | `Churn`               | Target variable indicating if the customer churned (`Yes` or `No`).   |
 
+
 ### Dataset Source
 
-The dataset is taken from Kaggle.
+The dataset can be downloaded using the Kaggle API:
+```python
+import kagglehub
 
+# Download the latest version of the dataset
+path = kagglehub.dataset_download("blastchar/telco-customer-churn")
 
-## Project Structure
+print("Path to dataset files:", path)
+
+Project Structture
 
 📦 telco-churn-library
-
-┣ 📜 LICENSE                                             # Licensing information
-
-┣ 📜 README.md                                           # Project documentation
-
-┣ 📜 setup.py                                            # Installation script for pip install
-
-┣ 📜 requirements.txt                                    # Dependencies list
-
-┣ 📂 api                                                 # API-related functionalities
-
-    ┃ ┣ 📜 __init__.py                                       # Package initializer
-
-    ┃ ┗ 📜 api.py                                            # API routes and configuration
-
-    ┗ 📜 trained_model_pk.ipynb                            #trained model to generate pickle file
-  
-    ┗ 📜 json_file.json                                    #json input file
-  
-    ┗ 📜 post_request.py                                   #request file for endpoint
-
-┣ 📂 Data                                                # Contains the dataset(s)
-
-     ┃ ┗ 📜 data.csv                                          # Example dataset for Telco Churn
-
-┣ 📂 src_telco_churn                                     # Main source code folder
-
-    ┃ ┣ 📜 __init__.py                                       # Package initializer for src_telco_churn
-
-    ┃ ┣ 📜 data_loader.py                                    # Handles data ingestion
-
-    ┃ ┣ 📜 feature_engineering.py                            # Feature engineering scripts
-
-    ┃ ┣ 📜 modeling.py                                       # Model training and evaluation
-
-    ┃ ┣ 📜 preprocessor.py                                   # Data preprocessing functionalities
-
-    ┃ ┗ 📜 utils.py                                          # Shared utility functions
-
-┣ 📂 Tests                                               # Unit tests for the project
-
-    ┃ ┣ 📜 test_data_loader.py                               # Test cases for data_loader.py
-
-    ┃ ┣ 📜 test_feature_engineering.py                       # Test cases for feature_engineering.py
-
-    ┃ ┣ 📜 test_modeling.py                                  # Test cases for modeling.py
-
-    ┃ ┗ 📜 test_preprocessor.py                              # Test cases for preprocessor.py
-
-┣ 📜 pipeline_execution.ipynb                            # Jupyter notebook for end-to-end pipeline execution
-
-
+┣ 📜 LICENSE                    # Licensing information
+┣ 📜 README.md                  # Project documentation
+┣ 📜 setup.py                   # Installation script
+┣ 📜 requirements.txt           # Dependencies list (currently blank)
+┣ 📂 telco_churn                # Main library folder
+┃ ┣ 📜 __init__.py              # Package initializer for telco_churn
+┃ ┣ 📂 data_processing          # Data processing folder
+┃ ┃ ┣ 📜 __init__.py            # Package initializer
+┃ ┃ ┣ 📜 data_loader.py         # Data ingestion module
+┃ ┃ ┣ 📜 preprocessor.py        # Data transformation module
+┃ ┣ 📂 feature_engineering      # Feature engineering folder
+┃ ┃ ┣ 📜 __init__.py            # Package initializer
+┃ ┃ ┣ 📜 feature_engineering.py # Feature engineering module
+┃ ┣ 📂 modeling                 # Modeling folder
+┃ ┃ ┣ 📜 __init__.py            # Package initializer
+┃ ┃ ┣ 📜 model.py               # Model training and evaluation module
+┃ ┣ 📂 api                      # API folder
+┃ ┃ ┣ 📜 __init__.py            # Package initializer
+┃ ┃ ┣ 📜 api.py                 # API configuration
+┃ ┃ ┣ 📜 json_file.json         # JSON data
+┃ ┃ ┗ 📜 post_request.py        # API routes and endpoints
+┃ ┣ 📂 pipeline                 # End-to-end pipelines
+┃ ┃ ┣ 📜 __init__.py            # Package initializer
+┃ ┃ ┣ 📜 trained_model.pkl      # The best model
+┃ ┃ ┗ 📜 end_to_end.ipynb       # Notebook with all the process of modelling
+┃ ┗ 📂 utils                    # Utilities folder
+┃   ┣ 📜 __init__.py            # Package initializer
+┃   ┗ 📜 utils.py               # General utility functions
+┗ 📂 tests                      # Unit tests
+  ┣ 📜 __init__.py              # Package initializer for tests
+  ┣ 📂 data_processing          # Tests for data processing
+  ┃ ┣ 📜 test_data_loader.py
+  ┃ ┗ 📜 test_preprocessor.py
+  ┣ 📂 feature_engineering      # Tests for feature engineering
+  ┃ ┗ 📜 test_feature_engineering.py
+  ┣ 📂 modeling                 # Tests for modeling
+  ┃ ┗ 📜 test_modeling.py
+  ┗ 📂 utils                    # Tests for utilities
+    ┗ 📜 test_general.py
+```
 ## Contributors
 •	Deepak Malik
 -Email: deepak.malik@bse.eu
