@@ -55,8 +55,8 @@ import kagglehub
 path = kagglehub.dataset_download("blastchar/telco-customer-churn")
 
 print("Path to dataset files:", path)
-```
-## Project Structture
+
+Project Structture
 
 📦 telco-churn-library
 ┣ 📜 LICENSE                    # Licensing information
@@ -98,7 +98,7 @@ print("Path to dataset files:", path)
   ┃ ┗ 📜 test_modeling.py
   ┗ 📂 utils                    # Tests for utilities
     ┗ 📜 test_general.py
-
+```
 ## Contributors
 •	Deepak Malik
 -Email: deepak.malik@bse.eu
