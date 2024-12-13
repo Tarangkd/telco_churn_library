@@ -118,9 +118,9 @@ Each class, function, or module should have one responsibility. For example, you
 
 O: Open/Closed Principle
 The system should be open for extension but closed for modification. This allows you to add new preprocessors, models, and features without altering existing code. For instance:
-
 Create abstract base classes (ABC) for Preprocessor, Model, Feature, and Metric that can be easily extended by adding new subclasses.
 Use polymorphism to allow different model types (e.g., LogisticRegressionModel, RandomForestModel) to be handled interchangeably.
+
 L: Liskov Substitution Principle
 Ensure that derived classes can be used in place of their base class without altering the expected behavior. For example, any new Preprocessor should conform to the base Preprocessor class interface, so it can be added seamlessly to the pipeline.
 
