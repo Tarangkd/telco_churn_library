@@ -1,0 +1,22 @@
+[
+    {
+        "gender": "Male",
+        "SeniorCitizen": 0,
+        "Partner": "Yes",
+        "tenure": 35,
+        "PhoneService": "Yes",
+        "PaperlessBilling": "Yes",
+        "MonthlyCharges": 120.25,
+        "TotalCharges": 150.45
+    },
+    {
+        "gender": "Female",
+        "SeniorCitizen": 1,
+        "Partner": "No",
+        "tenure": 22,
+        "PhoneService": "No",
+        "PaperlessBilling": "No",
+        "MonthlyCharges": 76.25,
+        "TotalCharges": 105.50
+    }
+]
